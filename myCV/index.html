@@ -22,7 +22,7 @@
   <!--googld Font-->
   <link href="https://fonts.googleapis.com/css?family=Lilita+One|Permanent+Marker|Roboto" rel="stylesheet">
   <style>
-  .carousel-control-prev-icon {
+    .carousel-control-prev-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
   }
 
@@ -61,6 +61,7 @@
     </div>
   </nav>
 
+  <!--Header Part-->
   <header class="bg-primary text-white" style="background-color: #45b7b8;">
     <div class="container text-center">
       <h1 class="hello">Hello I am Jun</h1>
@@ -68,6 +69,7 @@
     </div>
   </header>
 
+  <!--Introduction-->
   <section id="about" style="background-color: #c6fce5;">
     <div class="container">
       <div class="row">
@@ -79,25 +81,31 @@
           <div class="col-md-12 aboutMe">
             <p class="aboutMeIntro">My name is Junseok Kim(Jun). I have recently graduated from Cambrian college majoring in Mobile Application Development. <br />
               I worked as a project coordinator in software development field for 2years and 7months. </br>
-              When I worked as a project coordinator, I always wanted to be a developer and decided to start my career as a web developer<br/>
+              When I worked as a project coordinator, I always wanted to be a developer and decided to start my career as a web developer<br />
               I am open to any challenge presented and have a passion for learning a new skill and system.</br>
               I am looking for a junior web development job.</p>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
+  <!--Experience Part-->
   <section id="experience" style="background-color:#6ef3d6;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h2 class="titleHead">Experiences</h2>
           <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active container-fluid">
                 <h4 class="testimonial-text">iBoost Ryerson University - IT Operation coordinator</h4>
+                <h5 class="testimonial-text">Toronto, Canada</h5>
                 <ul class="listItems">
                   <li>
                     Implemented the Office Automation with Google Script(JS).
@@ -108,46 +116,90 @@
                   <li>
                     Implemented the Web Application with ReactJS.
                   </li>
-
                   <li>
-                    Document Link :<a href="https://drive.google.com/file/d/1SfukmbrxGqjMHRal3_VySp2sVbMBQYh8/view" target="_blank"> click </a>
+                    Document Link :<a href="https://drive.google.com/file/d/1SfukmbrxGqjMHRal3_VySp2sVbMBQYh8/view" target="_blank"> <em>click</em> </a>
                   </li>
                 </ul>
                 <p>
-
-
                   <em>"He was a strong communicator throughout the entire process in asking direction, flagging problems, and making progress transparent. In addition, his willingness to learn a new skill and system was a huge asset."</em>
                 </p>
-                <img class="testimonial-image" src="resource/iBoostLogo.png">
+                <img class="testimonial-image" src="resource/ryerson.png" alt="RyersonLogo.png" />
+                <img class="testimonial-image" src="resource/iBoostLogo.png" />
                 <em>Tabhita, iBoost</em>
               </div>
               <div class="carousel-item container-fluid">
-                <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-                <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-                <em>Beverly, Illinois</em>
+                <h4 class="testimonial-text">LG Soft India(LG Electronic R&D Centre) - Project Coordinator</h4>
+                <h5 class="testimonial-text">Bangalore, India</h5>
+                <ul class="listItems">
+                  <li>
+                    Conducted tracking and reporting development issues.
+                  </li>
+                  <li>
+                    Contributed to reducing the time in solving complex issues.
+                  </li>
+                  <li>
+                    Role in Point of Contact with LG and Qualcomm.
+                  </li>
+                  <li>
+                    Coordinated setting up the Automation test for developing Android phones.
+                  </li>
+                  <li>
+                    Conducted LG G5, G6 and other various projects.
+                  </li>
+                </ul>
+                <img class="testimonial-image" src="resource/LG.png" alt="LG">
+              </div>
+              <div class="carousel-item container-fluid">
+                <h4 class="testimonial-text">KOTRA - Global IT Internship in OraneTech</h4>
+                <h5 class="testimonial-text">Bangalore, India</h5>
+                <ul class="listItems">
+                  <li>
+                    Participated in the project developing web based CRM application(HTML/CSS).
+                  </li>
+                  <li>
+                    Client Engagement.
+                  </li>
+                  <li>
+                    Project Documentation activities.
+                  </li>
+                </ul>
+                <p>
+                  <em>"He is undoubtedly the type of worker that has the potential for great success at all level."</em>
+                </p>
+                <img class="testimonial-image" src="resource/Kotra.png" alt="KOTRA">
+                <img class="testimonial-image orane" src="resource/orane.png" alt="orane">
+                <em>Shakila, OraneTech</em>
               </div>
             </div>
 
           </div>
+          <!--testimonial button style-->
           <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"></span>
           </a>
           <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
           </a>
         </div>
 
       </div>
     </div>
   </section>
-  <section class="colored-section" id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  <!--Skill Part-->
+  <section class="colored-section" id="skill">
+    <img class="skill-logo" src="resource/HTML.png" alt="tc-logo">
+    <img class="skill-logo" src="resource/Css.png" alt="tnw-logo">
+    <img class="skill-logo" src="resource/JavaScript.png" alt="biz-insider-logo">
+    <img class="skill-logo" src="resource/Jquery.png" alt="mashable-logo">
+    <img class="skill-logo" src="resource/MySQL.png" alt="mashable-logo">
+    <img class="skill-logo" src="resource/NodeJS.png" alt="mashable-logo">
+    <img class="skill-logo" src="resource/React.png" alt="mashable-logo">
+    <img class="skill-logo" src="resource/GoogleScript.png" alt="mashable-logo">
   </section>
 
-  <section id="education" style ="background-color:#b6f7c1;">
+  <!--Education Part-->
+  <section id="education" style="background-color:#b6f7c1;">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -155,18 +207,19 @@
             <h2 class="titleHead">Education</h2>
             <img class="educationLogoImage" src="resource/college_icon_cambrian.jpg" alt="collegeLogo">
             <h3 class="educationHead">Cambrian College</h3>
-            <p class="educationDetail">Mobile Application Development - Post Graduated</p>
+            <p class="educationDetail">Post Graduated - Mobile Application Development</p>
           </div>
           <div class="education-row">
             <img class="educationLogoImage" src="resource/DKU_logo.jpg" alt="">
             <h3 class="educationHead">Dankook University</h3>
-            <p class="educationDetail">Bachelor of Engineering(Computer Science)</p>
+            <p class="educationDetail">Bachelor of Engineering - Computer Science</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!--Contact Part-->
   <section id="contact" style="background-color:#f7de1c;">
     <div class="container">
       <div class="row">
@@ -174,13 +227,13 @@
           <h2 class="titleHead">Contact Me</h2>
           <ul class="contactIcons1">
             <li class="contactList">
-              <a class="phoneNumber" href="tel:(647)979-7637"><img class="contactImage" src="resource/smartphone-call.png"/>+1 647 979 7637</a>
+              <a class="phoneNumber" href="tel:(647)979-7637"><img class="contactImage" src="resource/smartphone-call.png" />+1 647 979 7637</a>
             </li>
             <li class="contactList">
-              <a class="emailAddress" href="mailto:junseok.kim8707@gmail.com"><img class="contactImage" src="resource/close-envelope.png"/>junseok.kim8707@gmail.com</a>
+              <a class="emailAddress" href="mailto:junseok.kim8707@gmail.com"><img class="contactImage" src="resource/close-envelope.png" />junseok.kim8707@gmail.com</a>
             </li>
             <li class="contactList">
-              <a class="linkedIn" href="https://www.linkedin.com/in/junseok-kim-448465b5/" target="_blank"><img class="contactImage" src="resource/linkedin-logo.png"/>https://www.linkedin.com/in/junseok-kim-448465b5/</a>
+              <a class="linkedIn" href="https://www.linkedin.com/in/junseok-kim-448465b5/" target="_blank"><img class="contactImage" src="resource/linkedin-logo.png" />linkedin.com/in/junseok-kim-448465b5/</a>
             </li>
           </ul>
 
@@ -196,7 +249,6 @@
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; 2019 Portfolio by Jun </p>
     </div>
-    <!-- /.container -->
   </footer>
 
   <!-- Bootstrap core JavaScript -->

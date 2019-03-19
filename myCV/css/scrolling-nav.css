@@ -157,7 +157,7 @@ h5.testimonial-text{
   list-style-type: disc;
 }
 .carousel-indicators{
-  margin-bottom: 0;
+  margin-bottom: -20px;
 }
 .colored-section{
   height: 30%;

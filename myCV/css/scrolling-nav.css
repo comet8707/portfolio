@@ -3,14 +3,25 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
+ html, body {
+    	height: 100%;
+		margin: 0px;
+}
+
 header {
   padding: 100px 0 50px;
 }
 
 section {
-  padding: 150px 0;
+  padding: 100px 0;
 }
-
+a{
+  color: black;
+}
+a: hover{
+  color: white;
+}
 section .about {
   background-color: #2c3848;
 }
@@ -21,6 +32,11 @@ ul{
   flex: 66%;
   max-width: 100%;
 }
+.bg-primary{
+  height: auto;
+}
+
+/*Education part*/
 .educationLogoImage {
   height: 100px;
   border-radius: 100%;
@@ -31,15 +47,21 @@ ul{
   color: black;
   font-family: 'Roboto', cursive;
 }
+.educationLogoImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
 .lead {
   padding: 30px;
   display: inline-block;
   font-family: 'Lilita One', cursive;
   font-size: 1.5rem;
 }
-.bg-primary{
-  height: auto;
-}
+
+/*About Me Part*/
 .profilePhoto {
   height: 150px;
   margin-left: 90px;
@@ -54,12 +76,6 @@ ul{
   position: relative;
   top: 50px;
 }
-.educationLogoImage{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
 
 .aboutMe {
   display: inline-block;
@@ -69,7 +85,10 @@ ul{
   margin-top: 30px;
   color: black;
 }
-
+.aboutMeIntro{
+  margin-top: 20px;
+  text-align: center;
+}
 .hello, .titleHead {
   font-family: 'Permanent Marker', cursive;
   color: black;
@@ -82,6 +101,8 @@ ul{
   font-family: 'Roboto', cursive;
   color: black;
 }
+
+/*Contact Part*/
 .contactImage{
   height: 30px;
   display: inline-block;
@@ -96,19 +117,22 @@ ul{
 .contactList{
   margin: 1rem;
 }
-a{
-  color: black;
-}
-a: hover{
-  color: white;
-}
+
+/*Testimonial Part*/
 .testimonial-image {
   width: 20%;
-  /*border-radius: 100%;*/
+  margin: 20px;
+}
+.orane{
+  width: 8%;
   margin: 20px;
 }
 .testimonial-text {
   font-size: 2rem;
+  line-height: 1.5;
+}
+h5.testimonial-text{
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .carousel-control-prev {
@@ -132,6 +156,28 @@ a: hover{
   font-size: 1rem;
   list-style-type: disc;
 }
+.carousel-indicators{
+  margin-bottom: 0;
+}
+.colored-section{
+  height: 30%;
+  background-color: #6ef3d6;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+#experience{
+  padding-bottom: 0;
+}
+
+/*Skill Part*/
+.skill-logo {
+  width: 5%;
+  margin: 20px 20px 50px;
+}
+
+
 @media (min-width: 1344px) {
   .col-lg-8 {
     flex: 66%;
@@ -143,6 +189,9 @@ a: hover{
     left: 200px;
     margin-bottom: 10px;
     margin-top: -150px;
+  }
+  .aboutMeIntro{
+    text-align: left;
   }
   .profilePhoto {
     height: 150px;
